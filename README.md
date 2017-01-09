@@ -8,9 +8,9 @@ Use serial connection with top 3 inside pins nearest micro-usb connector: GND, T
 # basic preparation
 ```sh
 sudo nmcli device wifi connect $SSID password $PASSWORD
-sudo apt-get update
-sudo apt-get dist-upgrade -y
-sudo apt-get install tmux vim
+sudo apt-get update &&\
+sudo apt-get dist-upgrade -y&&\
+sudo apt-get install tmux vim -y&&\
 sudo dpkg-reconfigure tzdata
 ```
 
