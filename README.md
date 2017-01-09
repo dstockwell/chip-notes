@@ -9,14 +9,14 @@ Use serial connection with top 3 inside pins nearest micro-usb connector: GND, T
 ```sh
 sudo nmcli device wifi connect $SSID password $PASSWORD
 sudo apt-get update &&\
-sudo apt-get dist-upgrade -y&&\
-sudo apt-get install tmux vim -y&&\
+sudo apt-get dist-upgrade -y &&\
+sudo apt-get install tmux vim -y &&\
 sudo dpkg-reconfigure tzdata
 ```
 
 # motion setup
 ```sh
-sudo apt-get install motion
+sudo apt-get install motion -y
 sudo vi /etc/motion/motion.conf
 sudo vi /etc/default/motion
 ```
